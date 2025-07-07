@@ -104,6 +104,27 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* Event */
+
+#join .table {
+    /* events table font size small enough that 
+      the table doesn't overflow on xs screens. 
+      Size set back to 1rem in a media query 
+      for sm screens and up */
+    font-size: 0.7rem;
+}
+
+.student-discount {
+    background-color: var(--highlight-color);
+    font-weight: bold;
+    color: white;
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
 /* Game library cards */
 
 #new-games .card,
@@ -172,9 +193,16 @@ h2 {
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
   /* Make all service cards the same height for consistency */
-  #services .card-body {
+  #services .card-body {  
     min-height: auto;
   }
+
+  #join .table {
+        font-size: 1rem;
+    }
+    .student-discount{
+        font-size: 1rem;
+    }
 }
 
 /* xl devices (large desktops, 1200px and up) */
